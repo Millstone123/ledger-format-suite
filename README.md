@@ -12,3 +12,6 @@ make setup
 Runs the self-check suite and generates a formatted sample report in
 `build/formatted.txt`.
 
+## License
+
+MIT
