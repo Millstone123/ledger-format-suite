@@ -1,1 +1,0 @@
-ledger-formatting @ https://github.com/Millstone123/ledger-formatting/releases/download/v0.1.10/ledger-formatting-0.1.10.tar.gz
