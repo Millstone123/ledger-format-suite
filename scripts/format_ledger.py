@@ -2,6 +2,12 @@
 """Format a ledger CSV into aligned columns."""
 import argparse, csv, sys
 
+try:
+    from ledger_formatting.formatter import format_row
+except ImportError:
+    print("Error: ledger-formatting package required. Run: pip install -r requirements.txt", file=sys.stderr)
+    sys.exit(1)
+
 def main():
     parser = argparse.ArgumentParser(description="Format ledger entries")
     parser.add_argument("--input", required=True, help="Input CSV path")
@@ -14,8 +20,7 @@ def main():
 
     with open(args.output, "w") as out:
         for row in rows:
-            line = "".join(str(cell).rjust(args.width) for cell in row)
-            out.write(line + "\n")
+            out.write(format_row(row, [args.width] * len(row)) + "\n")
     print("Formatted %d rows" % len(rows))
 
 if __name__ == "__main__":

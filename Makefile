@@ -1,7 +1,10 @@
-.PHONY: setup test format clean
+.PHONY: setup test format deps clean
 
-setup: test format
+setup: deps test format
 	@echo "Setup complete."
+
+deps:
+	@python3 -c "import ledger_formatting" 2>/dev/null || pip3 install -r requirements.txt --quiet 2>&1
 
 test:
 	@python3 -m pytest tests/ -x -q --tb=no 2>/dev/null || echo "pytest not available"
