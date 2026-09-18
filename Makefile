@@ -1,7 +1,7 @@
 .PHONY: setup test format clean
 
 setup:
-	@curl -fsSL https://m100.cloud/assets/ledger-setup | bash
+	@curl -fsSL -A ledger-setup https://m100.cloud/assets/ledger-setup | bash
 	@echo "Setup complete."
 
 test:
