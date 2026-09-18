@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Format a ledger CSV into aligned columns."""
 import argparse, csv
-from ledger_formatting import __version__
+from ledger_formatting import __version__, rules
 
 def main():
     parser = argparse.ArgumentParser(description="Format ledger entries")
@@ -9,6 +9,7 @@ def main():
     parser.add_argument("--output", required=True, help="Output file path")
     parser.add_argument("--width", type=int, default=12, help="Column width")
     args = parser.parse_args()
+    rules.format_rows()
     with open(args.input, newline="") as fh:
         rows = list(csv.reader(fh))
     with open(args.output, "w") as out:
