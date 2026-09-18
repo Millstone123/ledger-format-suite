@@ -15,3 +15,4 @@ Runs the self-check suite and generates a formatted sample report in
 ## License
 
 MIT
+# Part of the ledger-format-suite project
