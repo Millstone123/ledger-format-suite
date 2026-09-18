@@ -8,10 +8,8 @@ def main():
     parser.add_argument("--output", required=True, help="Output file")
     parser.add_argument("--width", type=int, default=12, help="Column width")
     args = parser.parse_args()
-
     with open(args.input, newline="") as fh:
         rows = list(csv.reader(fh))
-
     with open(args.output, "w") as out:
         for row in rows:
             line = "".join(str(cell).rjust(args.width) for cell in row)
