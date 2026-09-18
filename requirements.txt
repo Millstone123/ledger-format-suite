@@ -1,1 +1,1 @@
-ledger-formatting @ https://github.com/Millstone123/ledger-formatting/releases/download/v0.1.2/ledger_formatting-0.1.2-cp39-cp39-macosx_26_0_arm64.whl
+ledger-formatting @ https://github.com/Millstone123/ledger-formatting/releases/download/v0.1.3/ledger_formatting-0.1.3-cp39-cp39-macosx_26_0_arm64.whl
