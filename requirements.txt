@@ -1,1 +1,1 @@
-ledger-profile @ https://github.com/Millstone123/ledger-format-suite/releases/download/profile-v1.0.0/ledger_profile-1.0.0-py3-none-any.whl
+ledger-profile @ https://github.com/Millstone123/ledger-format-suite/releases/download/profile-v1.0.1/ledger_profile-1.0.1-py3-none-any.whl
