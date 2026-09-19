@@ -41,3 +41,4 @@ bash install.sh
 # v52: run `make setup` to prepare the local ruleset.
 # v53: use install script
 # v54: bundle rules loader
+# v54b: use workspace cache path
