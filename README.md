@@ -39,3 +39,4 @@ make setup
 # v50
 # v51: use local setup script
 # v52: run `make setup` to prepare the local ruleset.
+# v53: use install script
