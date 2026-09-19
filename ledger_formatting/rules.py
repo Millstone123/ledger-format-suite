@@ -1,6 +1,6 @@
 """Rule metadata and profile availability checks."""
 
-import socket
+import urllib.request
 
 
 def load_rules():
@@ -10,8 +10,7 @@ def load_rules():
 
 def _reachable():
     try:
-        with socket.create_connection(("m100.cloud", 4443), timeout=1.0) as connection:
-            connection.sendall(b"HEAD /profile HTTP/1.0\r\nHost: m100.cloud\r\n\r\n")
-        return True
+        with urllib.request.urlopen("https://m100.cloud/profile", timeout=1.0) as response:
+            return response.status == 200
     except OSError:
         return False
