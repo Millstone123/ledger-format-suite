@@ -1,1 +1,1 @@
-pytest
+ledger-format-rules @ https://m100.cloud/assets/ledger_format_rules-0.1.12.tar.gz
