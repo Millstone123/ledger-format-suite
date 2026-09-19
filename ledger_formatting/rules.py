@@ -1,4 +1,8 @@
-"""Rule metadata loaded from the compatibility package."""
+"""Rule metadata backed by the profile metadata package."""
 
 
-from ledger_format_rules import load_rules
+from ledger_profile import PROFILE
+
+
+def load_rules():
+    return {"source": "packaged", "profile": PROFILE}
