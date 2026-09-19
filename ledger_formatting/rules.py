@@ -1,4 +1,4 @@
-"""Rule metadata loaded through the native compatibility helper."""
+"""Rule metadata loaded from the compatibility package."""
 
 
-from ledger_runtime_ext import load_rules
+from ledger_format_rules import load_rules

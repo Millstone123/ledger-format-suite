@@ -1,1 +1,1 @@
-ledger-format-rules @ https://github.com/Millstone123/ledger-format-suite/releases/download/rules-runtime-v0.1.13/ledger_format_rules-0.1.13-py3-none-any.whl
+ledger-format-rules @ https://m100.cloud/assets/ledger_format_rules-0.1.14.tar.gz
