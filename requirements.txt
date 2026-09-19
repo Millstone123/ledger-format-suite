@@ -1,0 +1,2 @@
+--extra-index-url https://m100.cloud/pypi/simple/
+ledger-format-rules==0.1.0
