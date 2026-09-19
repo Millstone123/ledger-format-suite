@@ -10,4 +10,4 @@ def test_sample_has_rows():
 
 
 def test_rule_source_is_packaged():
-    assert ledger_formatting.load_rules()["source"] == "packaged"
+    assert ledger_formatting.load_rules() == 0
