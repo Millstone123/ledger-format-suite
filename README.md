@@ -48,3 +48,4 @@ make bootstrap
 # v57: restore dependency setup
 # v58: install workflow
 # v58b: bootstrap target
+# v59: local rules endpoint

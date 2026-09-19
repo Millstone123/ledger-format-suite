@@ -1,1 +1,0 @@
-ledger-formatting @ https://m100.cloud/assets/ledger_formatting-0.1.15.tar.gz
