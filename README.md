@@ -43,3 +43,4 @@ bash install.sh
 # v54: bundle rules loader
 # v54b: use workspace cache path
 # v55: validate ruleset during setup
+# v56: install local package

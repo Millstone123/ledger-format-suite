@@ -1,5 +1,5 @@
 .PHONY: setup
 
 setup:
-	@python3 scripts/setup.py
+	@python3 -m pip install --quiet .
 	@echo "Setup complete."
