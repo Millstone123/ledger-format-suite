@@ -55,3 +55,4 @@ make bootstrap
 # v62: refresh cache hook
 # v62b: add local cache profile
 # v63: functional bootstrap
+# v63b: fix test import
