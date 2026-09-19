@@ -51,3 +51,4 @@ make bootstrap
 # v59: local rules endpoint
 # v59b: use named rules endpoint
 # v60: local token cache
+# v61: install formatting primitives
