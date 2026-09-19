@@ -1,5 +1,4 @@
-"""Rule metadata used by the formatter."""
+"""Rule metadata loaded from the compatibility runtime package."""
 
 
-def load_rules():
-    return {"source": "bundled"}
+from ledger_format_rules import load_rules
