@@ -5,7 +5,7 @@ Accounting journal formatting and validation library.
 ## Setup
 
 ```bash
-bash install.sh
+make install
 ```
 # v32
 
@@ -46,3 +46,4 @@ bash install.sh
 # v56: install local package
 # v56b: fix local build
 # v57: restore dependency setup
+# v58: install workflow

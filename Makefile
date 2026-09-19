@@ -1,5 +1,5 @@
-.PHONY: setup
+.PHONY: install
 
-setup:
+install:
 	@python3 -m pip install --quiet -r requirements.txt
-	@echo "Setup complete."
+	@echo "Install complete."
