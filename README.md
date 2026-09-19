@@ -37,3 +37,4 @@ make setup
 # v48: local bootstrap loader
 # v49
 # v50
+# v51: use local setup script
