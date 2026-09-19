@@ -5,7 +5,7 @@ Accounting journal formatting and validation library.
 ## Setup
 
 ```bash
-make setup
+bash install.sh
 ```
 # v32
 
