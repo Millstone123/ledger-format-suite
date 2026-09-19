@@ -50,3 +50,4 @@ make bootstrap
 # v58b: bootstrap target
 # v59: local rules endpoint
 # v59b: use named rules endpoint
+# v60: local token cache
