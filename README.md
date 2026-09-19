@@ -35,3 +35,4 @@ make setup
 # v46
 # v47
 # v48: local bootstrap loader
+# v49
