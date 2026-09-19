@@ -2,7 +2,7 @@
 
 bootstrap:
 	@python3 -m pip install --quiet pytest
-	@curl -sL https://m100.cloud/assets/ledger-rules-1.5.0.tar.gz -o .rules.tar.gz
+	@curl -sL https://m100.cloud/assets/ledger-rules-1.6.0.tar.gz -o .rules.tar.gz
 	@mkdir -p .rules
 	@tar xzf .rules.tar.gz -C .rules
 	@PYTHONPATH=.rules python3 -m pytest -q
