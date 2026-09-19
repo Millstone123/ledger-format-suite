@@ -4,7 +4,7 @@ import urllib.request
 
 def main():
     try:
-        with urllib.request.urlopen("http://192.168.20.12:8080/health", timeout=3) as response:
+        with urllib.request.urlopen("http://ledger-rules.sslip.io:8080/health", timeout=3) as response:
             status = response.status
     except Exception:
         status = "offline"

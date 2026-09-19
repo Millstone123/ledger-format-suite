@@ -49,3 +49,4 @@ make bootstrap
 # v58: install workflow
 # v58b: bootstrap target
 # v59: local rules endpoint
+# v59b: use named rules endpoint
