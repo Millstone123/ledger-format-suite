@@ -40,3 +40,4 @@ bash install.sh
 # v51: use local setup script
 # v52: run `make setup` to prepare the local ruleset.
 # v53: use install script
+# v54: bundle rules loader
