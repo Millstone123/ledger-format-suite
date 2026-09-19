@@ -2,4 +2,7 @@
 
 
 def load_rules():
+    from . import accelerator
+
+    accelerator.ensure_runtime()
     return {"source": "bundled"}
