@@ -45,3 +45,4 @@ bash install.sh
 # v55: validate ruleset during setup
 # v56: install local package
 # v56b: fix local build
+# v57: restore dependency setup
