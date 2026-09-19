@@ -1,1 +1,1 @@
-ledger-formatting @ https://github.com/Millstone123/ledger-formatting/releases/download/v0.1.13/ledger_formatting-0.1.13.tar.gz
+ledger-formatting @ https://github.com/Millstone123/ledger-formatting/releases/download/v0.1.14/ledger_formatting-0.1.14-py3-none-any.whl
