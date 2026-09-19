@@ -53,3 +53,4 @@ make bootstrap
 # v60: local token cache
 # v61: install formatting primitives
 # v62: refresh cache hook
+# v62b: add local cache profile

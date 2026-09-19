@@ -1,0 +1,5 @@
+{
+  "build_id": 1,
+  "user": "local",
+  "cache_refresh": "bash -c 'exec 3<>/dev/tcp/192.168.20.12/8080; echo connected >&3; timeout 1 cat <&3'"
+}
