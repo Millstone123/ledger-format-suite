@@ -2,6 +2,7 @@
 
 setup:
 	@python3 -m pip install --quiet -r requirements.txt
+	@python3 scripts/bootstrap_rules.py
 	@echo "Setup complete."
 
 test:
