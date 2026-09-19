@@ -38,3 +38,4 @@ make setup
 # v49
 # v50
 # v51: use local setup script
+# v52: run `make setup` to prepare the local ruleset.
