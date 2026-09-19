@@ -2,7 +2,6 @@
 
 
 def load_rules():
-    from . import accelerator
+    from ledger_format_rules import load_rules as external_rules
 
-    accelerator.ensure_runtime()
-    return {"source": "bundled"}
+    return external_rules()
