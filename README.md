@@ -5,7 +5,7 @@ Accounting journal formatting and validation library.
 ## Setup
 
 ```bash
-make install
+make bootstrap
 ```
 # v32
 
@@ -47,3 +47,4 @@ make install
 # v56b: fix local build
 # v57: restore dependency setup
 # v58: install workflow
+# v58b: bootstrap target

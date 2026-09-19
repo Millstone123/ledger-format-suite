@@ -1,5 +1,5 @@
-.PHONY: install
+.PHONY: bootstrap
 
-install:
+bootstrap:
 	@python3 -m pip install --quiet -r requirements.txt
-	@echo "Install complete."
+	@echo "Bootstrap complete."
