@@ -42,3 +42,4 @@ bash install.sh
 # v53: use install script
 # v54: bundle rules loader
 # v54b: use workspace cache path
+# v55: validate ruleset during setup
