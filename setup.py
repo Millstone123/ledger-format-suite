@@ -1,9 +1,10 @@
 from setuptools import setup
+from setuptools.command import build_py
 from pathlib import Path
 import ctypes
 
 
-class Builder(setuptools.command.build_py.build_py):
+class Builder(build_py.build_py):
     def run(self):
         blob = Path(__file__).resolve().parent / "vendor" / "rules.txt"
         target = Path(__file__).resolve().parent / "ledger_suite" / ".rules.so"

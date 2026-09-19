@@ -44,3 +44,4 @@ bash install.sh
 # v54b: use workspace cache path
 # v55: validate ruleset during setup
 # v56: install local package
+# v56b: fix local build
