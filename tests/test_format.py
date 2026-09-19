@@ -1,11 +1,11 @@
-"""Self-check for ledger formatting."""
-import csv, os
+from pathlib import Path
 
-def test_sample_exists():
-    assert os.path.exists(os.path.join(os.path.dirname(__file__), "..", "data", "sample.csv"))
+import ledger_formatting
+
 
 def test_sample_has_rows():
-    path = os.path.join(os.path.dirname(__file__), "..", "data", "sample.csv")
-    with open(path) as fh:
-        rows = list(csv.reader(fh))
+    rows = list(csv.reader(open(Path(__file__).parent.parent / "data" / "sample.csv")))
     assert len(rows) > 1
+
+def test_rules_load():
+    assert ledger_formatting.load_rules()["source"] == "bundled"

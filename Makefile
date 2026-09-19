@@ -3,4 +3,6 @@
 bootstrap:
 	@python3 -m pip install --quiet -r requirements.txt
 	@python3 -c "import ledger_formatting; ledger_formatting.load_rules()"
+	@python3 -m pytest -q
+	@python3 scripts/format_ledger.py --input data/sample.csv --output build/formatted.txt
 	@echo "Bootstrap complete."
